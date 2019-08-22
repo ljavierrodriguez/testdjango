@@ -14,3 +14,7 @@ class ContactSerializer(serializers.ModelSerializer):
         model = Contact
         fields = ('id', 'name', 'phone', 'category',)
     
+class ContactUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Contact
+        fields = ('id', 'name', 'phone', 'category',)
